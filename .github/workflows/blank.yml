@@ -17,6 +17,8 @@ jobs:
         env:
           GH_API_KEY: ${{ secrets.GIT_API_KEY }}
         run: yarn build
+        env:
+          GITHUB_API_TOKEN: ${{secrets.GITHUBAPI_TOKEN}}
 
       - name: deploy
         uses: maxheld83/ghpages@v0.2.1

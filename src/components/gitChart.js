@@ -10,9 +10,13 @@ const useStyles=makeStyles(()=>
       display:'flex',
       alignItems:'center',
       justifyContent:'center',
+      margin:'55px auto 0px',
     },
     typo:{
       margin:'5px',
+    },
+    gurahu:{
+      margin:'0px auto 55px',
     },
   }),
 );
@@ -126,7 +130,9 @@ export const GitChart=()=>{
         </Typography>
         <IconLink title="github" url="https://github.com/yumi9502" />
       </div>
+      <div className={classes.gurahu}>
     <Doughnut data={data} />
+    </div>
     </div>
   )
   }

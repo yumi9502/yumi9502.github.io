@@ -6,7 +6,7 @@ import BackgroundImage from "gatsby-background-image"
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import { HideOnScroll } from './HideOnScroll';
+import { HideOnScroll } from './hideOnScroll';
 
 const usestyles =makeStyles((theme)=>
   createStyles({

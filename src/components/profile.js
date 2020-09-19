@@ -11,7 +11,9 @@ export const Profile=()=>{
     const classes=useStyle();
     return(
         <div className={classes.root}>
-                <Typography align="center" variant="h5" gutterBottom>{``}<a id="profile">プロフィール</a></Typography>
+            <div id ="profile">
+                <Typography align="center" variant="h5" gutterBottom>プロフィール</Typography>
+            </div>
                 <Typography component="p">
                     向井と申します。Unityでゲーム開発をしたりイラストを描いたりしています。<br />
                    プログラミングは数年前から独学で学んできており現在も勉強中です。

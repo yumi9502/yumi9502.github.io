@@ -5,23 +5,34 @@ import { graphql, useStaticQuery } from 'gatsby'
 import BackgroundImage from "gatsby-background-image"
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
+import { createStyles, makeStyles } from '@material-ui/core/styles';
 import { HideOnScroll } from './hideOnScroll';
 
-const usestyles =makeStyles((theme)=>
+const usestyles =makeStyles(()=>
   createStyles({
     root:{
       flexGrow: 1,
     },
-    headercss:{
-      background: `forestgreen`,
-      marginBottom: `1.45rem`,
-    },
     divcss:{
-      margin: `0 auto`,
       maxWidth: 960,
       padding: `1.45rem 1.0875rem`,
     },
+    taggroup:{
+      
+      position: "relative",
+      "& ul" :{
+        width:300,
+        marginLeft:"13rem",
+        marginTop:"1rem",
+        position:"absolute",
+        display: "flex",
+        justifyContent: "center",
+        listStyle: "none",
+        "& li" :{
+          marginRight: "1.5rem",
+        }
+      }
+    }
   }),
 );
 
@@ -69,6 +80,19 @@ const classes=usestyles();
       </h1>
     </div>
     </BackgroundImage>
+    <div className={classes.taggroup}>
+    <ul>
+      <li>
+        <Link to="/#profile" style={{textDecoration:`none`, color:`black`,}}>プロフィール</Link>
+      </li>
+      <li>
+        <Link to="/#skill" style={{textDecoration:`none`, color:`black`,}}>スキル</Link>
+      </li>
+      <li>
+        <Link to="/#create" style={{textDecoration:`none`, color:`black`,}}>制作物</Link>
+      </li>
+    </ul>
+    </div>
     </Toolbar>
     </AppBar>
   </HideOnScroll>

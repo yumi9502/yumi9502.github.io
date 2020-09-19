@@ -34,9 +34,9 @@ const IndexPage = () => {
     <Grid item xs={12} sm={9}>
     <Profile/>
     </Grid>
-    </Grid>
+    <Grid item xs={12} sm={9}>
     <GitChart/>
-    <Grid container spacing={9} justify="center">
+    </Grid>
     <Grid item xs={12} sm={9}>
     <Skill/>
     </Grid>

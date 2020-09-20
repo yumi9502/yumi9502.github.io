@@ -115,6 +115,9 @@ export const GitChart=()=>{
         data:data1,
       },],
     };
+  const options ={
+    maintainAspectRatio: false,
+  };
   const classes=useStyles();
   
   return(
@@ -130,7 +133,7 @@ export const GitChart=()=>{
         <IconLink title="github" url="https://github.com/yumi9502" />
       </div>
       <div>
-    <Doughnut data={data} width={100} height={100} />
+    <Doughnut data={data} width={550} height={550} options={options} />
     </div>
     </div>
   )

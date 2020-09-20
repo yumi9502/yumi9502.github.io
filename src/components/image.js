@@ -41,7 +41,7 @@ const Image = (props) => {
     }
   }
   `)
-const edge=data.allFile.edges.find(edge=> edge.node.relativePath == props.name);
+const edge=data.allFile.edges.find(edge=> edge.node.relativePath === props.name);
   return <Img fluid={edge.node.childImageSharp.fluid} />
 }
 

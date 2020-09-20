@@ -130,7 +130,7 @@ export const GitChart=()=>{
         <IconLink title="github" url="https://github.com/yumi9502" />
       </div>
       <div>
-    <Doughnut data={data} />
+    <Doughnut data={data} width={100} height={100} />
     </div>
     </div>
   )

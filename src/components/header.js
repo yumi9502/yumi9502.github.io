@@ -4,8 +4,8 @@ import React from "react"
 import { graphql, useStaticQuery } from 'gatsby'
 import BackgroundImage from "gatsby-background-image"
 import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import { createStyles, makeStyles } from '@material-ui/core/styles';
+//import Toolbar from '@material-ui/core/Toolbar';
+import { createStyles, makeStyles,Typography } from '@material-ui/core';
 import { HideOnScroll } from './hideOnScroll';
 
 const usestyles =makeStyles(()=>
@@ -14,22 +14,16 @@ const usestyles =makeStyles(()=>
       flexGrow: 1,
     },
     divcss:{
-      maxWidth: 960,
-      padding: `1.45rem 1.0875rem`,
+      padding: `0.5rem 1.0875rem`,
     },
     taggroup:{
-      
-      position: "relative",
       "& ul" :{
-        width:300,
-        marginLeft:"13rem",
-        marginTop:"1rem",
-        position:"absolute",
+        margin:"0rem",
         display: "flex",
         justifyContent: "center",
         listStyle: "none",
         "& li" :{
-          marginRight: "1.5rem",
+          margin: "0 1.5rem 0 0",
         }
       }
     }
@@ -59,7 +53,6 @@ const classes=usestyles();
   return(
   <HideOnScroll>
     <AppBar color="default">
-    <Toolbar>
     <BackgroundImage
         Tag="section"
         className={className}
@@ -67,7 +60,7 @@ const classes=usestyles();
         backgroundColor={`#040e18`}
       >
     <div className={classes.divcss}>
-      <h1 style={{ margin: 0 }}>
+        <Typography variant="h4">
         <Link
           to="/"
           style={{
@@ -77,9 +70,11 @@ const classes=usestyles();
         >
           {siteTitle}
         </Link>
-      </h1>
+      </Typography>
     </div>
+    
     </BackgroundImage>
+    
     <div className={classes.taggroup}>
     <ul>
       <li>
@@ -93,7 +88,6 @@ const classes=usestyles();
       </li>
     </ul>
     </div>
-    </Toolbar>
     </AppBar>
   </HideOnScroll>
 )}

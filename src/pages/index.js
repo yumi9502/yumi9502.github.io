@@ -31,7 +31,7 @@ const IndexPage = () => {
     <Container className={classes.root}>
     <div id="back-to-top-anchor" className={classes.app} />
     <Grid container spacing={9} justify="center">
-    <Grid item xs={12} sm={9}>
+    <Grid item xs={12} sm={7}>
     <Profile/>
     </Grid>
     <Grid item xs={12} sm={9}>

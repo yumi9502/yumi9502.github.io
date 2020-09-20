@@ -24,7 +24,7 @@ export const Create=()=>{
                 title="3D脱出"
                 />
                 <CardMedia>
-                    <Image/>
+                    <Image name="gameKunren1.PNG"/>
                 </CardMedia>
                 <CardContent>
                     <Typography variant="body2" color="textSecondary" component="p">
@@ -47,7 +47,7 @@ export const Create=()=>{
                 title="射撃学園"
                 />
                 <CardMedia>
-                    <Image/>
+                    <Image name="gameSyageki1.PNG"/>
                 </CardMedia>
                 <CardContent>
                     <Typography variant="body2" color="textSecondary" component="p">

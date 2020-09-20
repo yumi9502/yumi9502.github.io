@@ -27,7 +27,7 @@ const IndexPage = () => {
   const classes = useStyles();
   return(
   <Layout>
-    <SEO title="Home" />
+    <SEO title=" " />
     <Container className={classes.root}>
     <div id="back-to-top-anchor" className={classes.app} />
     <Grid container spacing={9} justify="center">

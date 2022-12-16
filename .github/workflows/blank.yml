@@ -23,3 +23,4 @@ jobs:
         uses: enriikke/gatsby-gh-pages-action@v2
         with:
           access-token: ${{ secrets.GITHUBAPI_TOKEN }}
+          deploy-branch: gh-pages
